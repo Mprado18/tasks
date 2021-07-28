@@ -13,8 +13,10 @@ class TaskAdapter : RecyclerView.Adapter<TaskViewHolder>() {
     private lateinit var mListener: TaskListener
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TaskViewHolder {
-        val item =
-            LayoutInflater.from(parent.context).inflate(R.layout.row_task_list, parent, false)
+        val item = LayoutInflater.from(parent.context).inflate(
+            R.layout.row_task_list,
+            parent,
+            false)
         return TaskViewHolder(item, mListener)
     }
 

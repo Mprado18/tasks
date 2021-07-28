@@ -8,8 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.tasks.R
 import com.example.tasks.service.listener.TaskListener
 
-class TaskViewHolder(itemView: View, val listener: TaskListener) :
-    RecyclerView.ViewHolder(itemView) {
+class TaskViewHolder(itemView: View, val listener: TaskListener) : RecyclerView.ViewHolder(itemView) {
 
     private var mTextDescription: TextView = itemView.findViewById(R.id.text_description)
     private var mTextPriority: TextView = itemView.findViewById(R.id.text_priority)
